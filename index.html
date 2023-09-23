@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Modal</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="wrapper">
+
+<!-- circle1Starting -->
+        <div class="circle1">
+
+        </div>
+
+<!-- circle2Starting -->
+        <div class="circle2">
+
+        </div>
+        
+<!-- personCardStarting -->
+        <div class="personCard">
+            <img class="personCardimg" src="./images/personImg.png" alt="person img">
+            <h3>Atul Rawat</h3>
+            <p>Founder & CEO - Ramen Hotel</p>
+            <button id="first" onclick="showModal()">Share my profile</button>
+            <button id="second" >Follow me</button>
+        </div>
+        
+<!--modalStarting -->
+        <div class="modalCard">
+            <div class="modalHeader">
+                <h2 class="modalHeading">Share My Profile</h2>
+                <img onclick="hideModal()" class="modalImg" src="./images/" alt="closeModalCard">
+            </div>
+            <p class="modalPara">Share this via-</p>
+
+            <div class="shareApp">
+                <img src="./images/" alt="Facebook">
+                <img src="./images/" alt="Twitter">
+                <img src="./images/" alt="Instagram">
+                <img src="./images/" alt="Whatsup">
+                <img src="./images/" alt="Telegram">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

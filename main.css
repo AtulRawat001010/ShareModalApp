@@ -1,0 +1,190 @@
+:root{
+    background-color: black;
+    color: aliceblue;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.circle1{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+    background-color: rgb(230, 45, 45);
+    margin-left: 300px;
+    margin-top: 20px;
+    animation: slide 20s infinite ease-in;
+    /* box-sizing: border-box;
+    box-shadow: (0,0,100, yellow); */
+}
+
+.circle2{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    background-color: rgb(53, 90, 202);
+    margin-left: 900px;
+    margin-top: 400px;
+    animation: slide2 30s infinite;
+}
+
+@keyframes slide {
+    0%{
+        transform: translateX(0);
+        height: 250px;
+        width: 250px;
+        border-radius: 100%;
+    }
+    50%{
+        transform: translateX(60%);
+        height: 200px;
+        width: 200px;
+        border-radius: 100%;
+    }
+    100%{
+        transform: translateX(0);
+        height: 250px;
+        width: 250px;
+        border-radius: 100%;
+    }
+}
+
+@keyframes slide2 {
+    0%{
+        transform: translateX(0);
+        height: 250px;
+        width: 250px;
+        border-radius: 100%;
+    }
+    50%{
+        transform: translateX(-60%);
+        height: 200px;
+        width: 200px;
+        border-radius: 100%;
+    }
+    100%{
+        transform: translateX(0);
+        height: 250px;
+        width: 250px;
+        border-radius: 100%;
+    }
+}
+
+.personCard{
+    position: relative;
+    width: 300px;
+    height: 330px;
+    background-color: rgb(14, 6, 6, 0.8);
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    line-height: 20px;
+    padding: 10px;
+    margin-left: 600px;
+    margin-top: 160px;
+    .personCardimg{
+        max-height: 150px;
+        max-width: 150px;
+        border-radius: 100px;
+    }
+}
+
+button{
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: darkgray;
+    color: white;
+    font-weight:500;
+    border-radius: 4px;
+    transition-duration: 0.5s;
+}
+
+.modalCard{
+    position: absolute;
+    width: 500px;
+    height: 180px;
+    font-size: 15px;
+    margin-top: 240px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-top: 0;
+    background-color: rgb(14, 6, 6);
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-left: 510px;
+    scale: 0;
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+
+.modalHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+.modalImg{
+    margin-top: 20px;
+}
+
+.shareApp{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapperactive{
+    background-color: rgb(63, 59, 59, 0.5);
+    z-index: -100;
+    transition: all 1s;
+}
+
+.personCardactive{
+    position: relative;
+    width: 300px;
+    height: 330px;
+    background-color: rgb(63, 59, 59, 0.5);
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    line-height: 20px;
+    padding: 10px;
+    margin-left: 600px;
+    margin-top: 160px;
+    opacity: 0.5;
+    .personCardimg{
+        max-height: 150px;
+        max-width: 150px;
+        border-radius: 100px;
+    }
+}
+
+.visibleModalCard{
+    position: absolute;
+    width: 500px;
+    height: 180px;
+    font-size: 15px;
+    margin-top: 240px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-top: 0;
+    background-color: rgb(14, 6, 6);
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-left: 510px;
+    scale: 1;
+    opacity: 1;
+    transition-duration: 0.5s;
+    opacity: 0.9;
+}
