@@ -22,8 +22,7 @@
     margin-left: 300px;
     margin-top: 20px;
     animation: slide 20s infinite ease-in;
-    /* box-sizing: border-box;
-    box-shadow: (0,0,100, yellow); */
+    box-shadow: 0 0 20px 1px red;
 }
 
 .circle2{
@@ -35,6 +34,7 @@
     margin-left: 900px;
     margin-top: 400px;
     animation: slide2 30s infinite;
+    box-shadow: 0 0 15px 5px blue;
 }
 
 @keyframes slide {
